@@ -226,21 +226,6 @@ This project builds directly on the **DB Design Activity** implementation using 
 
 ---
 
-## Submission Requirements Met
-
-This repository includes:
-
-- **01_indexes.sql** - Simple and composite indexes with EXPLAIN analyses  
-- **02_subqueries.sql** - Multi-level subqueries and advanced JOINs  
-- **03_views.sql** - Security-focused and financial views  
-- **04_procedures.sql** - Worker management and project assignment procedures  
-- **05_triggers.sql** - Audit logging and certification validation  
-- **06_events.sql** - Automated project archiving (scheduled task)  
-- **README.md files** - Complete justifications for all challenge tasks  
-- **This master README** - Project overview and integrated documentation  
-
----
-
 ## Using This Project
 
 ### Prerequisites
