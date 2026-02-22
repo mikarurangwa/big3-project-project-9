@@ -59,13 +59,12 @@ BEGIN
       );
     
     -- Delete archived projects from main table
-    DELETE FROM projects
-    WHERE end_date IS NOT NULL
-      AND end_date < DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
-      AND project_id IN (
-          SELECT original_project_id 
-          FROM archived_projects
-      );
+    DELETE p
+    FROM projects p
+    INNER JOIN archived_projects ap
+        ON ap.original_project_id = p.project_id
+    WHERE p.end_date IS NOT NULL
+      AND p.end_date < DATE_SUB(CURDATE(), INTERVAL 1 YEAR);
     
     COMMIT;
 END$$
