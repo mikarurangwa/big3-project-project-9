@@ -1,3 +1,5 @@
+-- Module 4: Stored procedures
+
 DELIMITER $$
 
 CREATE PROCEDURE sp_add_worker_with_skill(

@@ -1,3 +1,5 @@
+-- Module 3: Views
+
 CREATE OR REPLACE VIEW v_project_worker_assignments AS
 SELECT p.project_name, p.site_address, w.first_name, w.last_name, w.phone, pa.assignment_date
 FROM projects p
